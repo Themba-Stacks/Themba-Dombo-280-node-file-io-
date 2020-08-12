@@ -12,4 +12,6 @@ class Vistor {
     }
 };
 
+
+
 module.exports = Vistor;
