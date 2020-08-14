@@ -2,7 +2,7 @@ var fs = require('fs');
 
 class Visitor {
     
-    constructor(fullName, age, dateOfVisit, timeOfVisit, comments, assistedBy, ){
+    constructor(fullName, age, dateOfVisit, timeOfVisit, comments, assistedBy){
         this.fullName = fullName;
         this.age = age;
         this.dateOfVisit = dateOfVisit;
@@ -52,7 +52,7 @@ John.timeOfVisit = "11:15";
 John.comments = "came to see the manager about the cleaner job";
 John.assistedBy = "Velda"
 
-John.save();
+//John.save();
 // load('John Vader');
 
 module.exports = { Visitor, load};
