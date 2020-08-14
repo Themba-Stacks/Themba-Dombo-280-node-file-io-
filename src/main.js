@@ -1,7 +1,8 @@
 var fs = require('fs');
 
-class Vistor {
-    constructor(fullName, age, dateOfVisit, timeOfVisit, comments, assistedBy){
+class Visitor {
+    
+    constructor(fullName, age, dateOfVisit, timeOfVisit, comments, assistedBy, ){
         this.fullName = fullName;
         this.age = age;
         this.dateOfVisit = dateOfVisit;
@@ -9,7 +10,7 @@ class Vistor {
         this.comments = comments;
         this.assistedBy = assistedBy;
     };
-
+    
     save(filePath = "../results"){
         let saveObject = {full_name:this.fullName, age:this.age, date_of_visit:this.dateOfVisit, time_of_visit:this.timeOfVisit, comments:this.comments, assisted_by:this.assistedBy};
         let saveJSON = JSON.stringify(saveObject);
@@ -17,7 +18,7 @@ class Vistor {
         let saveName = this.fullName.toLowerCase().replace(' ','_');        
         fs.writeFile(`${filePath}/visitor_${saveName}.json`, saveJSON, function (err) {
             if (err) throw err;
-            console.log('Saved!');
+            console.log('saved!');
           });
     }
 
@@ -43,7 +44,7 @@ function load (fullNameInput,filePath = "../results") {
     })
 };
 
-var John = new Vistor;
+var John = new Visitor;
 John.fullName = "John Vader";
 John.age = 21;
 John.dateOfVisit = "2020/03/21";
@@ -51,7 +52,7 @@ John.timeOfVisit = "11:15";
 John.comments = "came to see the manager about the cleaner job";
 John.assistedBy = "Velda"
 
-//John.save();
+John.save();
 // load('John Vader');
 
-module.exports = {Vistor,load};
+module.exports = { Visitor, load};
