@@ -44,15 +44,4 @@ function load (fullNameInput,filePath = "../results") {
     })
 };
 
-var John = new Visitor;
-John.fullName = "John Vader";
-John.age = 21;
-John.dateOfVisit = "2020/03/21";
-John.timeOfVisit = "11:15";
-John.comments = "came to see the manager about the cleaner job";
-John.assistedBy = "Velda"
-
-//John.save();
-// load('John Vader');
-
 module.exports = { Visitor, load};
