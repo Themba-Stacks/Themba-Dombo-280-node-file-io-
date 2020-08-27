@@ -44,4 +44,5 @@ function load (fullNameInput,filePath = "../results") {
     })
 };
 
+
 module.exports = { Visitor, load};
