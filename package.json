@@ -1,0 +1,25 @@
+{
+  "name": "themba-dombo-280-node-file-io-",
+  "version": "1.0.0",
+  "description": "create a back end service that will help capture basic information about prospective students who come to inquire here at Umuzi. in this project I will be storing and retrieving information form plain old json files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Themba-Dombo-280-node-file-io-.git"
+  },
+  "keywords": [
+    "node",
+    "fileIO",
+    "vanilla",
+    "js"
+  ],
+  "author": "Themba Dombo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Themba-Dombo-280-node-file-io-/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Themba-Dombo-280-node-file-io-#readme"
+}
